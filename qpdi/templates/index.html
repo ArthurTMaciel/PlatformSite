@@ -1,0 +1,625 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="{% static 'images/simbolo-branco-efeito.png' %}" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Projeto QDPI-FGV</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="">
+            <img src="{% static 'images/logos/logotipo3-branco-sem-efeito.png' %}" alt="" style="width: 200px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href=""> Início <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#eapi"> EAPI </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dimensoes"> Dimensões </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#equipe"> Equipe </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'plataforma' %}"> <u> Login </u> </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- Instrumentos section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>Observação Direta</h1>
+                    <p>
+                      O instrumento de observação direta consiste em um roteiro detalhado para caracterizar os ambientes de aprendizagem na Educação Infantil. Realizado por um observador externo, ele abrange seis seções essenciais, capturando aspectos que não seriam possíveis de identificar apenas por meio de entrevistas com diretores e professores.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box text-center">
+                    <img src="{% static 'images/observacao.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row align-items-center">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        <br>
+                        Entrevista com Diretor
+                      </h1>
+                      <p>
+                        O instrumento de entrevista com os diretores da unidade de Educação Infantil visa obter uma visão mais abrangente sobre o funcionamento da instituição como um todo, incluindo aspectos administrativos, recursos disponíveis e políticas institucionais, proporcionando uma compreensão mais completa do contexto educacional.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class=" col-lg-10 mx-auto">
+                        <div class="img-box">
+                          <img src="{% static 'images/diretor.png' %}" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row align-items-center">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        <br>
+                        Entrevista com Professor
+                      </h1>
+                      <p>
+                        O instrumento de entrevista com os professores da turma observada, busca-se obter informações específicas sobre a dinâmica e organização da sala de aula, assim como as práticas pedagógicas adotadas, o que complementa a compreensão dos ambientes de aprendizagem na Educação Infantil. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class=" col-lg-10 mx-auto">
+                        <div class="img-box">
+                          <img src="{% static 'images/professor.png' %}" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Intrumentos section -->
+  </div>
+
+  <!-- BNCC -->
+
+  <section class="about_section layout_padding-bottom mt-4" id="BNCC">
+    <div class="container  ">
+      <div class="row" style="margin-top: 7%;">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                A EI na BNCC
+              </h2>
+            </div>
+            <p>
+              A inclusão da Educação Infantil (EI) na Base Nacional Comum
+              Curricular (BNCC) foi um dos marcos do processo de sua integração à
+              educação básica, trazendo importantes reflexões a respeito de como deve
+              ser realizado o trabalho pedagógico nesta etapa. Reafirmou a centralidade
+              do protagonismo e da participação das crianças, assim como dos eixos
+              estruturantes: as brincadeiras e as interações. As estratégias que se apoiam nesses eixos, conhecidas como
+              “aprendizagem baseada no brincar” ou “centrada na criança”, estão
+              presentes nos documentos oficiais (p. ex. nas Diretrizes Curriculares
+              Nacionais e nos Parâmetros Nacionais de Qualidade), bem como nos
+              principais estudos que embasam o trabalho na EI há muitos anos.
+
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/crianca_papel.jpg' %}" alt="" style="border-radius: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end BNCC section -->
+
+
+  <!-- A EAPI section -->
+
+  <section class="server_section" id="eapi">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/logo_eapi.png' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Escala de Avaliação dos Ambientes de Aprendizagens dedicados à Primeira Infância
+              </h2>
+              <p>
+                A escala original foi baseada em estudos realizados em diversos países, cujas evidências mostram que
+                crianças pequenas aprendem melhor quando os adultos:<br>
+                1. As incentivam a se envolver diretamente com materiais;<br>
+                2. Dão a elas possibilidades de escolha em suas atividades e no uso de materiai;<br>
+                3. As colocam em conversas que ampliam a sua compreensão acerca dos conhecimentos que estão sendo
+                trabalhados; e<br>
+                4. Relacionam as atividades propostas a experiências reais ou do dia a dia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end A EAPI section -->
+
+  <!-- Dimensões section -->
+
+  <section class="service_section layout_padding" id="dimensoes">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Dimensões EAPI
+        </h2>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/infra.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Infraestrutura
+              </h4>
+              <p>
+                Que engloba itens como: estrutura predial, materiais disponíveis às crianças, equipamentos, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/CPI.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Currículo,Práticas e Interações
+              </h4>
+              <p>
+                Incluindo os itens como: Cuidado de si, planejamento de curriculo, organização de tempos e espaços, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/EG.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Equipe e Gestão
+              </h4>
+              <p>
+                Com itens tais quais: Formação, engajamento, projeto político pedagógico, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/alim.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Alimentação
+              </h4>
+              <p>
+                Que aborda todas as características da alimentação das crianças enquanto na escola.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/seg.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Segurança
+              </h4>
+              <p>
+                É a dimensão que aborda os perigos físicos e biológicos aos quais as crianças estão expostas no dia a
+                dia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/div.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Diversidade Funcional
+              </h4>
+              <p>
+                Nessa dimensão é avaliados treinamento de equipe e adaptações da escola para crianças com diversidade
+                funcional
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end dimensões section -->
+
+  <!-- Parte das fotinhas em baixo -->
+  <section class="client_section" id="equipe">
+    <div class="container">
+      <div class="heading_container heading_center">
+      </div>
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/Arthur_Teixeira.png' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Arthur Teixeira Maciel Oliveira
+
+                          </h5>
+                          <h6>
+                            Assistente de Pesquisa
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Olá, sou o Arthur Maciel, tenho 21 anos e sou graduando em Economia Empresarial e Controladoria
+                        na FEA-RP.
+                        Faço parte da equipe dprojetos dentro do Lepes. Gosto muito de música, caminhar e passar tempo
+                        com pessoas
+                        queridas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/Pedro_Borges.jpg' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Pedro Borges de Melo Filho
+                          </h5>
+                          <h6>
+                            Assistente de Dados
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Graduando em Ciências Econômicas pela Universidade de São Paulo (FEA-RP/USP). Trabalha com foco
+                        em soluções computacionais e analíticas para toda a parte de dados do laboratório, utilizando em
+                        sua maioria as linguagens de programação Python e R.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/Adnan_Kalil.jpg' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Adnan Kalil Jebailey Junior
+                          </h5>
+                          <h6>
+                            Pesquisador
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Graduado em Ciências Econômicas pelo Centro Universitário Municipal de Franca (2017) com
+                        extensão na Universidad de Málaga (Espanha), com estudos em Economia da Educação, Teoria dos
+                        Jogos, Administração de Organizações e Economia e Política da União Europeia. Mestrado em
+                        Planejamento e Análise de Políticas Públicas pela UNESP - Franca com foco de estudo em Teorias
+                        Democráticas / Filosofia Política - Conservadorismo, Historiografia Conservadora no Brasil,
+                        Conservadorismo no Brasil 2013/2018 e Redes Sociais e Análise do Discurso.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/Gabriel_Muniz.png' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Gabriel Muniz Dos Santos Ribeiro
+                          </h5>
+                          <h6>
+                            Analista de Dados
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        Olá, sou o Gabriel Muniz, tenho 23 anos e sou graduando em economia na FEA-RP. Faço parte da
+                        equipe da primeira infância dentro do Lepes. Me considero um amante de café, apreciador de
+                        cerveja barata, gosto de fazer exercícios físicos, passar momentos gostosos com os amigos, com
+                        muita comida e muita risada.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Acabou fotinhas -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4 style="margin-left: 42px;">
+              Realização
+            </h4>
+            <img src="{% static 'images/logos/preferencial-negativo2-sem-efeito.png' %}" alt="" style="width: 200px;">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links Úteis
+            </h4>
+            <div class="info_links">
+              <a class="active" href="/">
+                <img src="{% static 'images/nav-bullet.png' %}" alt="">
+                Início
+              </a>
+              <a class="active" href="#eapi">
+                <img src="{% static 'images/nav-bullet.png' %}" alt="">
+                EAPI
+              </a>
+              <a class="active" href="#dimensoes">
+                <img src="{% static 'images/nav-bullet.png' %}" alt="">
+                Dimensões
+              </a>
+              <a class="active" href="#equipe">
+                <img src="{% static 'images/nav-bullet.png' %}" alt="">
+                Equipe
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Nosso Slogan
+            </h4>
+            <p>
+              Transformando a Educação Infantil no Brasil: Avaliando Qualidade, Construindo Futuros!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Informações de contato
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://maps.app.goo.gl/mTpnyeMWw5DmxtmT8" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Rua Paineiras, Casa 11 - Campus da USP-RP
+                </span>
+              </a>
+              <a>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Ligue (16) 3315-3918
+                </span>
+              </a>
+              <a>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  contato.lepes@usp.br
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://www.facebook.com/LEPESUSP" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/lepesusp" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/company/lepesusp" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/lepesusp" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js' %}"></script>
+
+
+</body>
+
+</html>
